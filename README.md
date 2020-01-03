@@ -18,3 +18,8 @@
 > 162  git config http.sslVerify "false"
 > 163  env GIT_SSL_NO_VERIFY=true git clone https://gmyang@xxx.git
 > 164  git config --global http.sslVerify "false"
+
+* git 查看提交信息
+> git log -h
+> git show 575fae --stat
+
