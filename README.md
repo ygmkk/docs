@@ -27,3 +27,12 @@
 > git checkout -b modmic-jdk6 origin/modmic-jdk6
 
 > git branch -vv
+
+* 使用Guice的著名开源项目：
+> 1.Presto 
+.Presto是 Facebook 推出的一个基于Java开发的大数据分布式 SQL 查询引擎，可对从数 G 到数 P 的大数据进行交互式的查询，
+查询的速度达到商业数据仓库的级别，据称该引擎的性能是 Hive 的 10 倍以上。
+2.Azkaban
+Azkaban是由Linkedin开源的一个批量工作流任务调度器。用于在一个工作流内以一个特定的顺序运行一组工作和流程。Azkaban定义了一种
+KV文件格式来建立任务之间的依赖关系，并提供一个易于使用的web用户界面维护和跟踪你的工作流.
+3.ElasticSearch
