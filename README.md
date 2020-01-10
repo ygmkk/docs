@@ -23,3 +23,6 @@
 > git log -h
 > git show 575fae --stat
 
+* git 创建分支
+> git checkout -b modmic-jdk6 origin/modmic-jdk6
+> git branch -vv
