@@ -36,6 +36,6 @@
 Azkaban是由Linkedin开源的一个批量工作流任务调度器。用于在一个工作流内以一个特定的顺序运行一组工作和流程。Azkaban定义了一种
 KV文件格式来建立任务之间的依赖关系，并提供一个易于使用的web用户界面维护和跟踪你的工作流.
 3.ElasticSearch
-* 统计代码行数git log --stat --author='gmyang' --pretty=tformat: --since ==2020-01-01 --until=2020-01-25 --numstat|grep ..java$ | awk '{s[$3] += ($1+$2) }END{ j=0; total=0; for(i in s){ j++; print j, "、[", i, "]", ",代码变更", s[i], "行";total += s[i] } print total; }'
+* 统计代码行数
+> git log --stat --author='gmyang' --pretty=tformat: --since ==2020-01-01 --until=2020-01-25 --numstat|grep ..java$ | awk '{s[$3] += ($1+$2) }END{ j=0; total=0; for(i in s){ j++; print j, "、[", i, "]", ",代码变更", s[i], "行";total += s[i] } print total; }'
 
-> 
