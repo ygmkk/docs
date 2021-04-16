@@ -1,6 +1,6 @@
 KNATIVE_PATH='knative'
-KNATIVE_VER='v0.11.0'
-REGISTRY_URL='yhyddr'
+KNATIVE_VER='v0.22.0'
+REGISTRY_URL='ygmkk2021'
 
 rm -rf $KNATIVE_PATH
 mkdir $KNATIVE_PATH
@@ -12,9 +12,7 @@ echo "download yaml files ..."
 
 cd $KNATIVE_PATH
 
-wget -q https://github.com/knative/serving/releases/download/${KNATIVE_VER}/serving.yaml 
-wget -q https://github.com/knative/eventing/releases/download/${KNATIVE_VER}/release.yaml 
-wget -q https://github.com/knative/serving/releases/download/${KNATIVE_VER}/monitoring.yaml 
+wget -q https://github.com/knative/serving/releases/download/${KNATIVE_VER}/serving-core.yaml 
 
 cd ..
 
@@ -94,9 +92,9 @@ do
 	    tmp2=${new_image//\//__}
 	    new_image=${tmp2//__/\\/}
 
-	    # sed -i "s/${origin_image}/${new_image}/g" ${file}   
+	    sed -i "s/${origin_image}/${new_image}/g" ${file}   
 	    # 上面这行，如果是MacOS/UNIX请替换为: 
-        sed -i " " "s/${origin_image}/${new_image}/g" ${file}
+        # sed -i " " "s/${origin_image}/${new_image}/g" ${file}
 
 	done < image.tmp
 	counter=`expr ${counter} + 1`
